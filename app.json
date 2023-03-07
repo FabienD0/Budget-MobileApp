@@ -2,6 +2,7 @@
   "expo": {
     "name": "BudgetApp",
     "slug": "BudgetApp",
+    "description": "An easy app to track your weekly budget",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +16,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fabiend0.BudgetApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.fabiend0.BudgetApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "98db8d16-705e-47cb-85f8-46252ff3a7c4"
+      }
     }
   }
 }
